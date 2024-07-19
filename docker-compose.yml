@@ -3,7 +3,7 @@ version: '3.7'
 services:
 
   htpasswd:
-    image: sofocused/htpasswd-for-compose:1.0
+    image: sofocused/htpasswd:1.0
     command: >
       sh -c "python generator.py -u admin -p admin --path /htpasswd && tail -f /dev/null"
     volumes:
